@@ -40,7 +40,7 @@ border-radius: 50%;
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 206px;
+  margin-bottom: 100px;
 }
 .menu {
 display: flex;
@@ -86,10 +86,12 @@ opacity: 1;
 
 .main {
   padding: 0 67% 210px 0;
-  background: top right no-repeat url(img/main.svg);
+  background: top right no-repeat url(img/main.svg); 
 }
 
 .main__title {
+width: 567px;
+padding-top: 80px;
 margin-bottom: 0 0 40px 0;
 font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
 }
