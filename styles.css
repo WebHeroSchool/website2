@@ -1,64 +1,45 @@
-#menu__toggle {
+ #menu__toggle {
   opacity: 0;
+  display: inline-block;
   }
-
 .title {
 font-family: 'Roboto', sans-serif;
 }
+
 body {
   margin: 0;
 }
+
 .wrapper {
 margin:auto;
 width: 80%;
 }
 
-.logo, .menu {
+
+.logo, .menu  {
 display: inline-block;
 }
-
 .logo {
-position: relative;
-padding-left: 44px;
-font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
-}
-.logo__circle {
-position: absolute;
-left: 0;
-top: 50%;
-transform: translateY(-50%);
-width: 28px;
-height: 28px;
-}
-
-.logo__circle_color_dark-blue {
-background: #0056EC;
-border-radius: 50%;
-}
-
-.logo__circle_color_blue {
-left: 8px;
-top: 56%;
-background: #C8DBFB;
-border-radius: 50%;
+width: 190px;
+height: 35px;
+background:url('img/logo.svg');
 }
 
 .header {
-padding: 44px 0;
+padding: 40px 0;
 display: flex;
 justify-content: space-between;
-margin-bottom: 100px;
+margin-bottom: 125px;
 }
 
-.menu {
+.menu,.hamburger-menu {
 display: flex;
 align-items: center;
 }
 
 .menu__item {
-padding: 10px 0 0 0;
 position: relative;
-margin-right: 24px;
+margin-right: 25px;
 font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
 color: #000;
 text-decoration: none;
@@ -75,7 +56,6 @@ background: #0056EC;
 opacity: 0;
 transition: opacity .5s, width .5s;
 }
-
 
 .menu__item:hover {
 opacity: 0.5
@@ -95,16 +75,19 @@ background: #00AD9F;
 opacity: 1;
 }
 
+.menu__item:last-child {
+margin-right: 0;
+}
+
 .main {
 padding: 0 67% 210px 0;
 background: top right no-repeat url(img/main.svg);
 }
 
 .main__title {
-padding-top: 75px;
+padding-top: 84px;
 margin-bottom:40px;
 font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
-/* width: 567px; */
 }
 
 .main__title_text {
@@ -113,12 +96,12 @@ font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
 
 .main__subtitel {
 font: normal 22px/26px Roboto, arial, helvetica, sans-serif;
-margin-bottom:41px;
+margin-bottom: 41px;
 }
 
 .main__button {
 display: inline-block;
-font: 18px/21px Roboto, arial, helvetica, sans-serif;
+font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
 color: #fff;
 background: #0056EC;
 padding: 18px 21px;

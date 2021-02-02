@@ -3,20 +3,12 @@
 display: none;
 }
 .header {
-padding: 20px 0;
+padding: 24px 0 0 0;
 margin-bottom: 28px;
 }
-.logo{
-position: fixed;
-top: 20px;
-left: 20px;
-width: 26px;
-height: 26px;
-cursor: pointer;
-z-index: 1;
-}
-.logo_text {
-  opacity: 0;
+.logo {
+width: 41px;
+height: 35px;
 }
 .menu__item_active::after {
 background: none;
@@ -92,14 +84,14 @@ visibility: visible;
 left: 0;
 }
 .main {
-padding: 60% 0 0 0;
-background-size: 74%;
+padding: 74% 0 0 0;
+background-size: 95%;
 background-position: top center;
 text-align: center;
 }
 .main__title {
+padding-top: 15px;
 font: bold 30px/39px pt_serif, arial, helvetica, sans-serif;
-margin-top: 32px;
 margin-bottom: 44px;
 }
 .main__subtitel {
@@ -108,17 +100,24 @@ font: normal 16px/19px Roboto, arial, helvetica, sans-serif;
 }
 .main__button {
 font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+padding: 14px 25px 13px 16px;
  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+  width: 91%;
+  }
+  .header {
+
+  margin-bottom: 87px;
+  }
 .main {
 background-size: 50%;
 }
-.header {
-margin-bottom: 0;
-}
+
 .main__title {
+padding-top: 13px;
 font: bold 50px/66px pt_serif, arial, helvetica, sans-serif;
 align-items: center;
 width:434px;
@@ -133,13 +132,17 @@ font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
+
 .main {
 background-size: 55%;
 }
 .header {
+
 margin-bottom: 0;
 }
+
 .main__title {
+  padding-top: 54px;
 font: bold 50px/66px pt_serif, arial, helvetica, sans-serif;
 align-items: center;
 width:434px;
