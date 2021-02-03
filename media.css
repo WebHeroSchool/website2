@@ -2,6 +2,9 @@
 .menu {
 display: none;
 }
+.wrapper {
+width: 87%;
+}
 .header {
 padding: 24px 0 0 0;
 margin-bottom: 28px;
@@ -17,8 +20,8 @@ background: none;
 display: flex; /* используем flex для центрирования содержимого */
 align-items: center;  /* центрируем содержимое кнопки */
 position: fixed;
-top: 20px;
-right: 20px;
+top: 28px;
+right: 24px;
 width: 26px;
 height: 26px;
 cursor: pointer;
@@ -85,18 +88,19 @@ left: 0;
 }
 .main {
 padding: 74% 0 0 0;
-background-size: 95%;
+background-size: 85%;
 background-position: top center;
 text-align: center;
 }
 .main__title {
-padding-top: 15px;
-font: bold 30px/39px pt_serif, arial, helvetica, sans-serif;
-margin-bottom: 44px;
+padding: 0 0 0  4px;
+font: bold 30px/40px "PT Serif", arial, helvetica, sans-serif;
+margin: 19px 0 35px 0;
 }
 .main__subtitel {
-margin-bottom: 25px;
-font: normal 16px/19px Roboto, arial, helvetica, sans-serif;
+margin-top: 0;
+margin-bottom: 40px;
+font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
 }
 .main__button {
 font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
@@ -105,15 +109,14 @@ padding: 14px 25px 13px 16px;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .wrapper {
-  width: 91%;
-  }
-  .header {
-
-  margin-bottom: 87px;
-  }
+.wrapper {
+width: 91%;
+}
+.header {
+margin-bottom: 87px;
+}
 .main {
-background-size: 50%;
+background-size: 54%;
 }
 
 .main__title {
@@ -125,31 +128,44 @@ width:434px;
 .main__subtitel {
 font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
 width:367px;
+margin-bottom: 35px;
 }
 .main__button {
 font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
 }
-  }
+.menu__item {
+margin-right: 24px;
+font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+margin-top: 8px;
+}
+}
 
 @media (min-width: 1025px) and (max-width: 1366px) {
-
+.wrapper {
+width: 68%;
+}
+.menu__item {
+margin-right: 24px;
+font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+/* margin-top: 8px; */
+}
 .main {
 background-size: 55%;
 }
 .header {
-
-margin-bottom: 0;
+margin-bottom: 80px;
 }
-
 .main__title {
-  padding-top: 54px;
+padding-top: 23px;
 font: bold 50px/66px pt_serif, arial, helvetica, sans-serif;
 align-items: center;
 width:434px;
+margin-bottom: 34px;
 }
 .main__subtitel {
 font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
 width:367px;
+margin-bottom: 34px;
 }
 .main__button {
 font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
