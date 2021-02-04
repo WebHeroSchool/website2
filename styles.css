@@ -19,10 +19,24 @@ width: 80%;
 .logo, .menu  {
 display: inline-block;
 }
+
+@keyframes pulse {
+  from {
+    transform: scale(.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.85);
+  }
+}
 .logo {
 width: 190px;
 height: 35px;
 background:url('img/logo.svg');
+transform: scale(.85);
+animation: pulse 2s ease-in-out infinite;
 }
 
 .header {
@@ -31,6 +45,7 @@ display: flex;
 justify-content: space-between;
 margin-bottom: 125px;
 }
+
 
 .menu,.hamburger-menu {
 display: flex;
@@ -88,15 +103,28 @@ background: top right no-repeat url(img/main.svg);
 padding-top: 84px;
 margin-bottom:40px;
 font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
+transition: color 0.5s ease;
+}
+.main__title:hover {
+  color: green;
+  cursor: pointer;
 }
 
 .main__title_text {
   background: #ECF3FF;
 }
 
+@keyframes subt {
+  to {color:#0056EC;}
+}
+
 .main__subtitel {
 font: normal 22px/26px Roboto, arial, helvetica, sans-serif;
 margin-bottom: 41px;
+animation-name: subt;
+animation-duration: .3s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 15;
 }
 
 .main__button {
