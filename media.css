@@ -94,7 +94,7 @@ text-align: center;
 }
 .main__title {
 padding: 0 0 0  4px;
-font: bold 30px/40px "PT Serif", arial, helvetica, sans-serif;
+font: bold 30px/40px "pt_serifbold", arial, helvetica, sans-serif;
 margin: 19px 0 35px 0;
 }
 .main__subtitel {
@@ -121,7 +121,7 @@ background-size: 54%;
 
 .main__title {
 padding-top: 13px;
-font: bold 50px/66px pt_serif, arial, helvetica, sans-serif;
+font: bold 50px/66px "pt_serifbold", arial, helvetica, sans-serif;
 align-items: center;
 width:434px;
 }
@@ -157,7 +157,7 @@ margin-bottom: 80px;
 }
 .main__title {
 padding-top: 23px;
-font: bold 50px/66px pt_serif, arial, helvetica, sans-serif;
+font: bold 50px/66px "pt_serifbold", arial, helvetica, sans-serif;
 align-items: center;
 width:434px;
 margin-bottom: 34px;
