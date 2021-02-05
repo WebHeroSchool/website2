@@ -102,8 +102,9 @@ background: top right no-repeat url(img/main.svg);
 .main__title {
 padding-top: 84px;
 margin-bottom:40px;
-font: bold 66px/87px pt_serif, arial, helvetica, sans-serif;
+font: bold 66px/87px "pt_serifbold", arial, helvetica, sans-serif;
 transition: color 0.5s ease;
+width:567px;
 }
 .main__title:hover {
   color: green;
